@@ -1,0 +1,31 @@
+main (){
+	int a[100];
+	int c = 0;
+	write "please input five numbers:";
+	write endl;
+	while (c<5){
+		read a[c];
+		c=c+1;
+	}
+	int b;
+	b = 0;
+	int temp;
+	while (b<5){
+		c = b + 1;
+		while (c < 5){
+			if (a[b]>a[c]){
+			temp = a[c];a[c]=a[b];a[b]=temp;
+			}
+			c = c+1;
+		}
+		b = b+1;
+	}
+	c = 0;
+	write "the increase order of the numbers is:";
+	write endl;
+	while (c<5){
+		write a[c];write endl;
+		c = c+1; 
+	}
+	write endl;
+}

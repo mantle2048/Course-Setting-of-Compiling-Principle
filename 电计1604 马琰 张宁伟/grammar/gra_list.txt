@@ -1,0 +1,43 @@
+0 -1 Wenfa -> Pro 
+1 0 Pro -> main ( ) { S } 
+3 3 TN -> char 
+4 3 TN -> int 
+5 3 TN -> double 
+6 4 array -> id [ inum ] 
+7 4 array -> id [ id ] 
+8 6 num -> inum 
+9 6 num -> dnum 
+10 5 NA -> id 
+11 5 NA -> array 
+12 1 S -> P 
+13 1 S -> S P 
+14 15 P -> FUN 
+15 15 P -> TN id ; 
+16 15 P -> TN id [ num ] ; 
+17 15 P -> TN id = ' c ' ; 
+18 15 P -> TN id = E ; 
+19 15 P -> NA = E ; 
+20 15 P -> NA = ' c ' ; 
+21 15 P -> while ( B ) { S } 
+22 15 P -> read NA ; 
+23 15 P -> write NA ; 
+24 15 P -> write " str " ;  
+25 15 P -> write endl ; 
+26 15 P -> if ( B ) { S } 
+27 15 P -> if ( B ) { S } else { S } 
+28 7 E -> E + T 
+29 7 E -> E - T 
+30 7 E -> T 
+31 9 T -> T * F 
+32 9 T -> T / F 
+33 9 T -> F 
+34 10 F -> ( E ) 
+35 10 F -> NA 
+36 10 F -> num 
+37 8 B -> E ROP E 
+38 11 ROP -> > 
+39 11 ROP -> < 
+40 11 ROP -> >= 
+41 11 ROP -> <= 
+42 11 ROP -> == 
+43 11 ROP -> != 
